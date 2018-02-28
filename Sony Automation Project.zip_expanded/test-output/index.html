@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-BDD_Test_Suite">
+              <span class="suite-name border-failed">BDD Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-BDD_Test_Suite">
+                    <span>C:\Users\JMETER\Desktop\Selenium\Sony Automation Project.zip_expanded\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-BDD_Test_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-BDD_Test_Suite">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-BDD_Test_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-BDD_Test_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-BDD_Test_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-BDD_Test_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-BDD_Test_Suite" class="hide-methods failed suite-BDD_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-BDD_Test_Suite -->
+                      <a href="#" panel-name="suite-BDD_Test_Suite" class="show-methods failed suite-BDD_Test_Suite"> (show)</a> <!-- show-methods failed suite-BDD_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-BDD_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDD_Test_Suite" title="com.sony.test.runner.TestRunner" hash-for-method="runScenario(&quot;Filtering the results&quot;, &quot;Search Functionality in Search Result Page&quot;)">runScenario("Filtering the results", "Search Functionality in Search Result Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-BDD_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-BDD_Test_Suite" class="hide-methods passed suite-BDD_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-BDD_Test_Suite -->
+                      <a href="#" panel-name="suite-BDD_Test_Suite" class="show-methods passed suite-BDD_Test_Suite"> (show)</a> <!-- show-methods passed suite-BDD_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-BDD_Test_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDD_Test_Suite" title="com.sony.test.runner.TestRunner" hash-for-method="runScenario(&quot;Search with a valid search term&quot;, &quot;Search Functionality in Search Result Page&quot;)">runScenario("Search with a valid search term", "Search Functionality in Search Result Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDD_Test_Suite" title="com.sony.test.runner.TestRunner" hash-for-method="runScenario(&quot;Successful search on different pages&quot;, &quot;Search Functionality in Navigation Bar Search&quot;)">runScenario("Successful search on different pages", "Search Functionality in Navigation Bar Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDD_Test_Suite" title="com.sony.test.runner.TestRunner" hash-for-method="runScenario(&quot;Search in search page by two different actions&quot;, &quot;Search Functionality in Search Result Page&quot;)">runScenario("Search in search page by two different actions", "Search Functionality in Search Result Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDD_Test_Suite" title="com.sony.test.runner.TestRunner" hash-for-method="runScenario(&quot;Successful search on different pages&quot;, &quot;Search Functionality in Navigation Bar Search&quot;)">runScenario("Successful search on different pages", "Search Functionality in Navigation Bar Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDD_Test_Suite" title="com.sony.test.runner.TestRunner" hash-for-method="runScenario(&quot;Load More Results&quot;, &quot;Search Functionality in Search Result Page&quot;)">runScenario("Load More Results", "Search Functionality in Search Result Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDD_Test_Suite" title="com.sony.test.runner.TestRunner" hash-for-method="runScenario(&quot;Successful search on different pages&quot;, &quot;Search Functionality in Navigation Bar Search&quot;)">runScenario("Successful search on different pages", "Search Functionality in Navigation Bar Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDD_Test_Suite" title="com.sony.test.runner.TestRunner" hash-for-method="runScenario(&quot;Meaningless search term with zero result&quot;, &quot;Search Functionality in Search Result Page&quot;)">runScenario("Meaningless search term with zero result", "Search Functionality in Search Result Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDD_Test_Suite" title="com.sony.test.runner.TestRunner" hash-for-method="runScenario(&quot;Search in search page by two different actions&quot;, &quot;Search Functionality in Search Result Page&quot;)">runScenario("Search in search page by two different actions", "Search Functionality in Search Result Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDD_Test_Suite" title="com.sony.test.runner.TestRunner" hash-for-method="runScenario(&quot;Successful search on different pages&quot;, &quot;Search Functionality in Navigation Bar Search&quot;)">runScenario("Successful search on different pages", "Search Functionality in Navigation Bar Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-BDD_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-BDD_Test_Suite" class="panel BDD_Test_Suite">
+          <div class="suite-BDD_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sony.test.runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Filtering the results&quot;, &quot;Search Functionality in Search Result Page&quot;)">
+                  </a> <!-- runScenario("Filtering the results", "Search Functionality in Search Result Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Filtering the results", "Search Functionality in Search Result Page")</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;span class=&quot;label label-close fi fonticon-10-circle-x--after&quot;&gt;...&lt;/span&gt; is not clickable at point (1141, 304). Other element would receive the click: &lt;div class=&quot;acsModalBackdrop acsAbandonButton&quot; data-isbackdrop=&quot;true&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=64.0.3282.186)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;LEOPAR&apos;, ip: &apos;192.168.1.246&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\JMETER\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.186, webStorageEnabled: true}
+Session ID: ae4a1167311873e3427f2414ec767089
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at com.sony.framework.page.actions.ActionsCommon.click(ActionsCommon.java:18)
+	at com.sony.framework.page.actions.SearchResultPageActions.narrowDown(SearchResultPageActions.java:67)
+	at com.sony.test.stepDefinitions.SearchResultPageSteps.i_click_filters(SearchResultPageSteps.java:66)
+	at ✽.I should see filters working properly by clicking on them(src/test/resources/features/SearchResultPageSearch.feature:35)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BDD_Test_Suite-class-failed -->
+          <div class="suite-BDD_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sony.test.runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search with a valid search term&quot;, &quot;Search Functionality in Search Result Page&quot;)">
+                  </a> <!-- runScenario("Search with a valid search term", "Search Functionality in Search Result Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search with a valid search term", "Search Functionality in Search Result Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successful search on different pages&quot;, &quot;Search Functionality in Navigation Bar Search&quot;)">
+                  </a> <!-- runScenario("Successful search on different pages", "Search Functionality in Navigation Bar Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successful search on different pages", "Search Functionality in Navigation Bar Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search in search page by two different actions&quot;, &quot;Search Functionality in Search Result Page&quot;)">
+                  </a> <!-- runScenario("Search in search page by two different actions", "Search Functionality in Search Result Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search in search page by two different actions", "Search Functionality in Search Result Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successful search on different pages&quot;, &quot;Search Functionality in Navigation Bar Search&quot;)">
+                  </a> <!-- runScenario("Successful search on different pages", "Search Functionality in Navigation Bar Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successful search on different pages", "Search Functionality in Navigation Bar Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Load More Results&quot;, &quot;Search Functionality in Search Result Page&quot;)">
+                  </a> <!-- runScenario("Load More Results", "Search Functionality in Search Result Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Load More Results", "Search Functionality in Search Result Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successful search on different pages&quot;, &quot;Search Functionality in Navigation Bar Search&quot;)">
+                  </a> <!-- runScenario("Successful search on different pages", "Search Functionality in Navigation Bar Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successful search on different pages", "Search Functionality in Navigation Bar Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Meaningless search term with zero result&quot;, &quot;Search Functionality in Search Result Page&quot;)">
+                  </a> <!-- runScenario("Meaningless search term with zero result", "Search Functionality in Search Result Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Meaningless search term with zero result", "Search Functionality in Search Result Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search in search page by two different actions&quot;, &quot;Search Functionality in Search Result Page&quot;)">
+                  </a> <!-- runScenario("Search in search page by two different actions", "Search Functionality in Search Result Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search in search page by two different actions", "Search Functionality in Search Result Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successful search on different pages&quot;, &quot;Search Functionality in Navigation Bar Search&quot;)">
+                  </a> <!-- runScenario("Successful search on different pages", "Search Functionality in Navigation Bar Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successful search on different pages", "Search Functionality in Navigation Bar Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BDD_Test_Suite-class-passed -->
+        </div> <!-- panel BDD_Test_Suite -->
+        <div panel-name="test-xml-BDD_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\JMETER\Desktop\Selenium\Sony Automation Project.zip_expanded\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;BDD Test Suite&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test name=&quot;Search Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.sony.test.runner.TestRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Search Test --&gt;
+&lt;/suite&gt; &lt;!-- BDD Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-BDD_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for BDD Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Search Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-BDD_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for BDD Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-BDD_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for BDD Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_BDD_Test_Suite');
+function tableData_BDD_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'com.sony.test.runner.TestRunner')
+data.setCell(0, 3, 46191);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'com.sony.test.runner.TestRunner')
+data.setCell(1, 3, 23014);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.sony.test.runner.TestRunner')
+data.setCell(2, 3, 18991);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.sony.test.runner.TestRunner')
+data.setCell(3, 3, 14898);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.sony.test.runner.TestRunner')
+data.setCell(4, 3, 12854);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'com.sony.test.runner.TestRunner')
+data.setCell(5, 3, 12494);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'com.sony.test.runner.TestRunner')
+data.setCell(6, 3, 8174);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'com.sony.test.runner.TestRunner')
+data.setCell(7, 3, 7036);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'com.sony.test.runner.TestRunner')
+data.setCell(8, 3, 6609);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'com.sony.test.runner.TestRunner')
+data.setCell(9, 3, 4586);
+window.suiteTableData['BDD_Test_Suite']= { tableData: data, tableDiv: 'times-div-BDD_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-BDD_Test_Suite">
+              </div> <!-- times-div-BDD_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-BDD_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for BDD Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("Search with a valid search term", "Search Functionality in Search Result Page")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "result">I navigate to &quot;Sony Search&quot; page on URL &quot;https:&#x2F;&#x2F;www.sony.com&#x2F;search?query=&quot; (PASSED : 2s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see &quot;Search Results | Sony US&quot; title (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see &quot;Search&quot; button (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I fill in search with &quot;television&quot; (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I click &quot;Search&quot; button (PASSED : 5s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see results more than zero (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">All results should be valid (PASSED : 2s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("Successful search on different pages", "Search Functionality in Navigation Bar Search")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "result">I navigate to &quot;Sony Community&quot; page on URL &quot;https:&#x2F;&#x2F;community.sony.com&#x2F;&quot; (PASSED : 4s)</div></span>
+                <span class="reporter-method-output"><div "result">I click on search in navigation bar (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I fill in search bar in navigation bar with &quot;bravia&quot; (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I press enter (PASSED : 4s)</div></span>
+                <span class="reporter-method-output"><div "result">I&#x27;m now on URL contains &quot;sony.com&#x2F;search?query=bravia&quot; (PASSED : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">All results should be valid (PASSED : 8s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("Search in search page by two different actions", "Search Functionality in Search Result Page")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "result">I navigate to &quot;Sony Search&quot; page on URL &quot;https:&#x2F;&#x2F;www.sony.com&#x2F;search?query=&quot; (PASSED : 2s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see &quot;Search Results | Sony US&quot; title (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see &quot;Search&quot; button (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I fill in search with &quot;mobile phone&quot; (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I perform search by &quot;PRESS_ENTER&quot; (PASSED : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see results more than zero (PASSED : 0s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("Successful search on different pages", "Search Functionality in Navigation Bar Search")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "result">I navigate to &quot;Sony PlayStation&quot; page on URL &quot;https:&#x2F;&#x2F;www.sony.com&#x2F;electronics&#x2F;playstation&quot; (PASSED : 3s)</div></span>
+                <span class="reporter-method-output"><div "result">I click on search in navigation bar (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I fill in search bar in navigation bar with &quot;joystick&quot; (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I press enter (PASSED : 2s)</div></span>
+                <span class="reporter-method-output"><div "result">I&#x27;m now on URL contains &quot;sony.com&#x2F;search?query=joystick&quot; (PASSED : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">All results should be valid (PASSED : 7s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("Load More Results", "Search Functionality in Search Result Page")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "result">I navigate to &quot;Sony Search&quot; page on URL &quot;https:&#x2F;&#x2F;www.sony.com&#x2F;search?query=&quot; (PASSED : 2s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see &quot;Search Results | Sony US&quot; title (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see &quot;Search&quot; button (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I fill in search with &quot;mobile phone&quot; (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I click &quot;Search&quot; button (PASSED : 3s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see &quot;Load More&quot; button (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I click &quot;Load More&quot; button (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">Results count shown in current page should be increased (PASSED : 0s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("Successful search on different pages", "Search Functionality in Navigation Bar Search")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "result">I navigate to &quot;Sony Home&quot; page on URL &quot;https:&#x2F;&#x2F;www.sony.com&#x2F;&quot; (PASSED : 4s)</div></span>
+                <span class="reporter-method-output"><div "result">I click on search in navigation bar (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I fill in search bar in navigation bar with &quot;phone&quot; (PASSED : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">I press enter (PASSED : 11s)</div></span>
+                <span class="reporter-method-output"><div "result">I&#x27;m now on URL contains &quot;sony.com&#x2F;search?query=phone&quot; (PASSED : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">All results should be valid (PASSED : 4s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("Meaningless search term with zero result", "Search Functionality in Search Result Page")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "result">I navigate to &quot;Sony Search&quot; page on URL &quot;https:&#x2F;&#x2F;www.sony.com&#x2F;search?query=&quot; (PASSED : 2s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see &quot;Search Results | Sony US&quot; title (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see &quot;Search&quot; button (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I fill in search with &quot;asdfghjkl&quot; (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I click &quot;Search&quot; button (PASSED : 4s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see &quot;Your search for &quot;asdfghjkl&quot; returned 0 results&quot; zero message (PASSED : 0s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("Search in search page by two different actions", "Search Functionality in Search Result Page")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "result">I navigate to &quot;Sony Search&quot; page on URL &quot;https:&#x2F;&#x2F;www.sony.com&#x2F;search?query=&quot; (PASSED : 2s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see &quot;Search Results | Sony US&quot; title (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see &quot;Search&quot; button (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I fill in search with &quot;mobile phone&quot; (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I perform search by &quot;CLICK_SEARCH&quot; (PASSED : 2s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see results more than zero (PASSED : 0s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("Successful search on different pages", "Search Functionality in Navigation Bar Search")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "result">I navigate to &quot;Sony Support&quot; page on URL &quot;https:&#x2F;&#x2F;esupport.sony.com&#x2F;&quot; (PASSED : 3s)</div></span>
+                <span class="reporter-method-output"><div "result">I click on search in navigation bar (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I fill in search bar in navigation bar with &quot;help&quot; (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I press enter (PASSED : 2s)</div></span>
+                <span class="reporter-method-output"><div "result">I&#x27;m now on URL contains &quot;sony.com&#x2F;search?query=help&quot; (PASSED : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">All results should be valid (PASSED : 4s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("Filtering the results", "Search Functionality in Search Result Page")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "result">I navigate to &quot;Sony Search&quot; page on URL &quot;https:&#x2F;&#x2F;www.sony.com&#x2F;search?query=&quot; (PASSED : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see &quot;Search Results | Sony US&quot; title (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see &quot;Search&quot; button (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I fill in search with &quot;headphone&quot; (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">I click &quot;Search&quot; button (PASSED : 4s)</div></span>
+                <span class="reporter-method-output"><div "result">All filters should be valid (PASSED : 18s)</div></span>
+                <span class="reporter-method-output"><div "result">I should see filters working properly by clicking on them (FAILED : 21s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-BDD_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-BDD_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sony.test.runner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initializeTest</span>
+                <span class="method-start">438 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Successful search on different pages", "Search Functionality in Navigation Bar Search")</span>
+                <span class="method-start">6567 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Successful search on different pages", "Search Functionality in Navigation Bar Search")</span>
+                <span class="method-start">29584 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Successful search on different pages", "Search Functionality in Navigation Bar Search")</span>
+                <span class="method-start">44485 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Successful search on different pages", "Search Functionality in Navigation Bar Search")</span>
+                <span class="method-start">57343 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search with a valid search term", "Search Functionality in Search Result Page")</span>
+                <span class="method-start">76337 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Meaningless search term with zero result", "Search Functionality in Search Result Page")</span>
+                <span class="method-start">88834 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Load More Results", "Search Functionality in Search Result Page")</span>
+                <span class="method-start">97010 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Filtering the results", "Search Functionality in Search Result Page")</span>
+                <span class="method-start">104048 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search in search page by two different actions", "Search Functionality in Search Result Page")</span>
+                <span class="method-start">150245 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search in search page by two different actions", "Search Functionality in Search Result Page")</span>
+                <span class="method-start">156855 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">161443 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">162152 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

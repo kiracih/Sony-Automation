@@ -1,0 +1,320 @@
+<html>
+<head>
+<title>TestNG:  Search Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Search Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 28 13:42:08 EET 2018</td>
+</tr>
+<tr><td>Total time:</td><td>162 seconds (162168 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sony.test.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sony.test.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Filtering the results", "Search Functionality in Search Result Page"<br/>
+<a href="#Output-186092362" onClick='toggleBox("Output-186092362", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-186092362" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-186092362">
+<div "result">I navigate to &quot;Sony Search&quot; page on URL &quot;https:&#x2F;&#x2F;www.sony.com&#x2F;search?query=&quot; (PASSED : 1s)</div><br/>
+<div "result">I should see &quot;Search Results | Sony US&quot; title (PASSED : 0s)</div><br/>
+<div "result">I should see &quot;Search&quot; button (PASSED : 0s)</div><br/>
+<div "result">I fill in search with &quot;headphone&quot; (PASSED : 0s)</div><br/>
+<div "result">I click &quot;Search&quot; button (PASSED : 4s)</div><br/>
+<div "result">All filters should be valid (PASSED : 18s)</div><br/>
+<div "result">I should see filters working properly by clicking on them (FAILED : 21s)</div><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;span class=&quot;label label-close fi fonticon-10-circle-x--after&quot;&gt;...&lt;/span&gt; is not clickable at point (1141, 304). Other element would receive the click: &lt;div class=&quot;acsModalBackdrop acsAbandonButton&quot; data-isbackdrop=&quot;true&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=64.0.3282.186)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;LEOPAR&apos;, ip: &apos;192.168.1.246&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\JMETER\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.186, webStorageEnabled: true}
+Session ID: ae4a1167311873e3427f2414ec767089
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at com.sony.framework.page.actions.ActionsCommon.click(ActionsCommon.java:18)
+	at com.sony.framework.page.actions.SearchResultPageActions.narrowDown(SearchResultPageActions.java:67)
+	at com.sony.test.stepDefinitions.SearchResultPageSteps.i_click_filters(SearchResultPageSteps.java:66)
+	at ?.I should see filters working properly by clicking on them(src/test/resources/features/SearchResultPageSearch.feature:35)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace186092362", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace186092362'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;span class=&quot;label label-close fi fonticon-10-circle-x--after&quot;&gt;...&lt;/span&gt; is not clickable at point (1141, 304). Other element would receive the click: &lt;div class=&quot;acsModalBackdrop acsAbandonButton&quot; data-isbackdrop=&quot;true&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=64.0.3282.186)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;LEOPAR&apos;, ip: &apos;192.168.1.246&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\JMETER\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.186, webStorageEnabled: true}
+Session ID: ae4a1167311873e3427f2414ec767089
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at com.sony.framework.page.actions.ActionsCommon.click(ActionsCommon.java:18)
+	at com.sony.framework.page.actions.SearchResultPageActions.narrowDown(SearchResultPageActions.java:67)
+	at com.sony.test.stepDefinitions.SearchResultPageSteps.i_click_filters(SearchResultPageSteps.java:66)
+	at ?.I should see filters working properly by clicking on them(src/test/resources/features/SearchResultPageSearch.feature:35)
+</pre></div></td>
+<td>46</td>
+<td>com.sony.test.runner.TestRunner@5700d6b1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sony.test.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sony.test.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful search on different pages", "Search Functionality in Navigation Bar Search"<br/>
+<a href="#Output-1528236859" onClick='toggleBox("Output-1528236859", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1528236859" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1528236859">
+<div "result">I navigate to &quot;Sony Home&quot; page on URL &quot;https:&#x2F;&#x2F;www.sony.com&#x2F;&quot; (PASSED : 4s)</div><br/>
+<div "result">I click on search in navigation bar (PASSED : 0s)</div><br/>
+<div "result">I fill in search bar in navigation bar with &quot;phone&quot; (PASSED : 1s)</div><br/>
+<div "result">I press enter (PASSED : 11s)</div><br/>
+<div "result">I&#x27;m now on URL contains &quot;sony.com&#x2F;search?query=phone&quot; (PASSED : 1s)</div><br/>
+<div "result">All results should be valid (PASSED : 4s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.sony.test.runner.TestRunner@5700d6b1</td></tr>
+<tr>
+<td title='com.sony.test.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sony.test.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful search on different pages", "Search Functionality in Navigation Bar Search"<br/>
+<a href="#Output-1629713561" onClick='toggleBox("Output-1629713561", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1629713561" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1629713561">
+<div "result">I navigate to &quot;Sony PlayStation&quot; page on URL &quot;https:&#x2F;&#x2F;www.sony.com&#x2F;electronics&#x2F;playstation&quot; (PASSED : 3s)</div><br/>
+<div "result">I click on search in navigation bar (PASSED : 0s)</div><br/>
+<div "result">I fill in search bar in navigation bar with &quot;joystick&quot; (PASSED : 0s)</div><br/>
+<div "result">I press enter (PASSED : 2s)</div><br/>
+<div "result">I&#x27;m now on URL contains &quot;sony.com&#x2F;search?query=joystick&quot; (PASSED : 1s)</div><br/>
+<div "result">All results should be valid (PASSED : 7s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.sony.test.runner.TestRunner@5700d6b1</td></tr>
+<tr>
+<td title='com.sony.test.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sony.test.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful search on different pages", "Search Functionality in Navigation Bar Search"<br/>
+<a href="#Output-2057978100" onClick='toggleBox("Output-2057978100", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2057978100" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2057978100">
+<div "result">I navigate to &quot;Sony Support&quot; page on URL &quot;https:&#x2F;&#x2F;esupport.sony.com&#x2F;&quot; (PASSED : 3s)</div><br/>
+<div "result">I click on search in navigation bar (PASSED : 0s)</div><br/>
+<div "result">I fill in search bar in navigation bar with &quot;help&quot; (PASSED : 0s)</div><br/>
+<div "result">I press enter (PASSED : 2s)</div><br/>
+<div "result">I&#x27;m now on URL contains &quot;sony.com&#x2F;search?query=help&quot; (PASSED : 1s)</div><br/>
+<div "result">All results should be valid (PASSED : 4s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.sony.test.runner.TestRunner@5700d6b1</td></tr>
+<tr>
+<td title='com.sony.test.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sony.test.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful search on different pages", "Search Functionality in Navigation Bar Search"<br/>
+<a href="#Output-1876726350" onClick='toggleBox("Output-1876726350", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1876726350" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1876726350">
+<div "result">I navigate to &quot;Sony Community&quot; page on URL &quot;https:&#x2F;&#x2F;community.sony.com&#x2F;&quot; (PASSED : 4s)</div><br/>
+<div "result">I click on search in navigation bar (PASSED : 0s)</div><br/>
+<div "result">I fill in search bar in navigation bar with &quot;bravia&quot; (PASSED : 0s)</div><br/>
+<div "result">I press enter (PASSED : 4s)</div><br/>
+<div "result">I&#x27;m now on URL contains &quot;sony.com&#x2F;search?query=bravia&quot; (PASSED : 1s)</div><br/>
+<div "result">All results should be valid (PASSED : 8s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.sony.test.runner.TestRunner@5700d6b1</td></tr>
+<tr>
+<td title='com.sony.test.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sony.test.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search with a valid search term", "Search Functionality in Search Result Page"<br/>
+<a href="#Output-139194843" onClick='toggleBox("Output-139194843", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-139194843" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-139194843">
+<div "result">I navigate to &quot;Sony Search&quot; page on URL &quot;https:&#x2F;&#x2F;www.sony.com&#x2F;search?query=&quot; (PASSED : 2s)</div><br/>
+<div "result">I should see &quot;Search Results | Sony US&quot; title (PASSED : 0s)</div><br/>
+<div "result">I should see &quot;Search&quot; button (PASSED : 0s)</div><br/>
+<div "result">I fill in search with &quot;television&quot; (PASSED : 0s)</div><br/>
+<div "result">I click &quot;Search&quot; button (PASSED : 5s)</div><br/>
+<div "result">I should see results more than zero (PASSED : 0s)</div><br/>
+<div "result">All results should be valid (PASSED : 2s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.sony.test.runner.TestRunner@5700d6b1</td></tr>
+<tr>
+<td title='com.sony.test.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sony.test.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Meaningless search term with zero result", "Search Functionality in Search Result Page"<br/>
+<a href="#Output-31498556" onClick='toggleBox("Output-31498556", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31498556" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31498556">
+<div "result">I navigate to &quot;Sony Search&quot; page on URL &quot;https:&#x2F;&#x2F;www.sony.com&#x2F;search?query=&quot; (PASSED : 2s)</div><br/>
+<div "result">I should see &quot;Search Results | Sony US&quot; title (PASSED : 0s)</div><br/>
+<div "result">I should see &quot;Search&quot; button (PASSED : 0s)</div><br/>
+<div "result">I fill in search with &quot;asdfghjkl&quot; (PASSED : 0s)</div><br/>
+<div "result">I click &quot;Search&quot; button (PASSED : 4s)</div><br/>
+<div "result">I should see &quot;Your search for &quot;asdfghjkl&quot; returned 0 results&quot; zero message (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.sony.test.runner.TestRunner@5700d6b1</td></tr>
+<tr>
+<td title='com.sony.test.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sony.test.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Load More Results", "Search Functionality in Search Result Page"<br/>
+<a href="#Output-1152822589" onClick='toggleBox("Output-1152822589", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1152822589" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1152822589">
+<div "result">I navigate to &quot;Sony Search&quot; page on URL &quot;https:&#x2F;&#x2F;www.sony.com&#x2F;search?query=&quot; (PASSED : 2s)</div><br/>
+<div "result">I should see &quot;Search Results | Sony US&quot; title (PASSED : 0s)</div><br/>
+<div "result">I should see &quot;Search&quot; button (PASSED : 0s)</div><br/>
+<div "result">I fill in search with &quot;mobile phone&quot; (PASSED : 0s)</div><br/>
+<div "result">I click &quot;Search&quot; button (PASSED : 3s)</div><br/>
+<div "result">I should see &quot;Load More&quot; button (PASSED : 0s)</div><br/>
+<div "result">I click &quot;Load More&quot; button (PASSED : 0s)</div><br/>
+<div "result">Results count shown in current page should be increased (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.sony.test.runner.TestRunner@5700d6b1</td></tr>
+<tr>
+<td title='com.sony.test.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sony.test.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search in search page by two different actions", "Search Functionality in Search Result Page"<br/>
+<a href="#Output-609686266" onClick='toggleBox("Output-609686266", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-609686266" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-609686266">
+<div "result">I navigate to &quot;Sony Search&quot; page on URL &quot;https:&#x2F;&#x2F;www.sony.com&#x2F;search?query=&quot; (PASSED : 2s)</div><br/>
+<div "result">I should see &quot;Search Results | Sony US&quot; title (PASSED : 0s)</div><br/>
+<div "result">I should see &quot;Search&quot; button (PASSED : 0s)</div><br/>
+<div "result">I fill in search with &quot;mobile phone&quot; (PASSED : 0s)</div><br/>
+<div "result">I perform search by &quot;CLICK_SEARCH&quot; (PASSED : 2s)</div><br/>
+<div "result">I should see results more than zero (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.sony.test.runner.TestRunner@5700d6b1</td></tr>
+<tr>
+<td title='com.sony.test.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sony.test.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search in search page by two different actions", "Search Functionality in Search Result Page"<br/>
+<a href="#Output-138613547" onClick='toggleBox("Output-138613547", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-138613547" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-138613547">
+<div "result">I navigate to &quot;Sony Search&quot; page on URL &quot;https:&#x2F;&#x2F;www.sony.com&#x2F;search?query=&quot; (PASSED : 2s)</div><br/>
+<div "result">I should see &quot;Search Results | Sony US&quot; title (PASSED : 0s)</div><br/>
+<div "result">I should see &quot;Search&quot; button (PASSED : 0s)</div><br/>
+<div "result">I fill in search with &quot;mobile phone&quot; (PASSED : 0s)</div><br/>
+<div "result">I perform search by &quot;PRESS_ENTER&quot; (PASSED : 1s)</div><br/>
+<div "result">I should see results more than zero (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.sony.test.runner.TestRunner@5700d6b1</td></tr>
+</table><p>
+</body>
+</html>
